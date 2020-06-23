@@ -21,7 +21,7 @@ $sql = "UPDATE stud set name='$name',age='$age',email='$email',contact='$contact
 
     $result = mysqli_query($con,$sql);
         if($result){
-            header("location:studentregpannel");
+            header("location:studentregpannel.php");
         }else{
             echo mysqli_error($con);
         }
